@@ -12,13 +12,13 @@ wss.on("connection", (socket, request) => {
         wss.clients.forEach((client) => {
             if(client.readyState === WebSocket.OPEN) client.send(`Server Broadcast : ${message}`);
         })
-    })
+    });
 
     socket.on("error", (err) => {
         console.log(`Error : ${err.message} : ${ip}`);
-    })
-    
+    });
+
     socket.on("close", () =>{
         console.log("Client Disconnected");
-    })
+    });
 });
