@@ -1,9 +1,9 @@
 {
   "name": "websocket",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": ""
+    "dev": "node --watch index.js"
   },
   "keywords": [],
   "author": "",
@@ -11,6 +11,7 @@
   "type": "module",
   "description": "",
   "dependencies": {
+    "express": "^5.2.1",
     "ws": "^8.21.1"
   },
   "devDependencies": {
